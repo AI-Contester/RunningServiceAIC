@@ -15,9 +15,16 @@ import java.net.Socket;
  */
 public class Listener {
     
+    private final int port;
+    
+    public Listener(int port)
+    {
+        this.port = port;
+    }
+    
     public void run() throws IOException, Throwable
     {
-        ServerSocket serverSocket = new ServerSocket(8080);
+        ServerSocket serverSocket = new ServerSocket(port);
         while (true) {
             Socket socket = serverSocket.accept();
             System.out.println("Client connected from " 

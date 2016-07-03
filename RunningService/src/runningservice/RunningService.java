@@ -5,6 +5,8 @@
  */
 package runningservice;
 
+import HttpServer.Listener;
+
 /**
  *
  * @author Eugene
@@ -13,9 +15,11 @@ public class RunningService {
 
     /**
      * @param args the command line arguments
+     * @throws java.lang.Throwable
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public static void main(String[] args) throws Throwable {
+        Listener listener = new Listener(80);
+        listener.run();
     }
     
 }
