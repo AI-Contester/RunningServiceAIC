@@ -3,19 +3,13 @@ package runningService;
 
 public class SessionResponse {
 
-    public int id;
-    public String message;
+    public String id;
 
-    public SessionResponse(int id, String message){
+    public SessionResponse(String id){
         this.id = id;
-        this.message = message;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
-    }
-
-    public String getMessage() {
-        return message;
     }
 }
