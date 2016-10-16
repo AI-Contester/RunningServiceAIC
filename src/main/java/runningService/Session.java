@@ -6,11 +6,11 @@ public class Session {
 
     public String id;
 
-    public int[] strategies;
+    public String[] strategies;
     public String status;
     public Date date;
 
-    public Session(int[] strategies, String status, Date date)
+    public Session(String[] strategies, String status, Date date)
     {
         this.strategies = strategies;
         this.status = status;
