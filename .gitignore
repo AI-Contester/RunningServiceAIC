@@ -1,2 +1,3 @@
-/RunningService/nbproject/private/
-/RunningService/build/
+build
+.gradle
+.idea
